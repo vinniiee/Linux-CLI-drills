@@ -63,7 +63,7 @@ sleep 2
 
 #5. Delete the directory named five
 
-find . -name 'five' -exec rm -r {} \;
+rm -r hello/five
 echo 'Task 5 : Deleted the directory named five'
 
 #print update on shell
@@ -75,7 +75,7 @@ sleep 2
 
 #6. Rename the one directory to uno
 
-find . -name 'one' -exec mv {} uno \;
+mv hello/one hello/uno
 
 echo 'Task 6 : Renamed the one directory to uno'
 
@@ -87,7 +87,7 @@ cd ..
 sleep 2
 
 #7. Move a.txt to the two directory
-find . -name 'a.txt' -exec sh -c 'mv "$1" "$(find . -name "two")" ' _ {} \; 2>/dev/null
+find . -name 'a.txt' -exec sh -c 'mv "$1" "$(find . -name "two")"' _ {} \; 2>/dev/null
 
 echo 'Task 7 : Moved a.txt to the two directory'
 
