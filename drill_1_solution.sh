@@ -3,13 +3,13 @@
 #1. Creating the required directory structure
 
 mkdir -p hello/one/two/three/four && mkdir -p hello/five/six/seven
-echo "\nTask 1 : Created the directories structure\n"
+echo '\nTask 1 : Created the directories structure\n'
 
 
 #print update on shell
 tree hello 2>/dev/null
 
-echo "\n ####################################### \n"
+echo '/n ####################################### \n'
 sleep 2
 
 
@@ -30,7 +30,7 @@ echo '\nTask 2 : Created the required files\n'
 
 tree hello 2>/dev/null
 
-echo "\n ####################################### \n"
+echo '\n ####################################### \n'
 sleep 2
 
 
@@ -41,13 +41,13 @@ echo '\nTask 3 : Removed all the files having the .log extension\n'
 #print update on shell
 
 tree hello 2>/dev/null
-echo "\n ####################################### \n"
+echo '\n ####################################### \n'
 sleep 2
 
 #4. Add the following content to a.txt
 # Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, development starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others
 
-find . -name 'a.txt' -exec sh -c 'echo "Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, development starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others" > "$1"' _ {} \;
+find . -name 'a.txt' -exec sh -c 'echo 'Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, development starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others" > "$1"' _ {} \;
 
 echo '\nTask 4 : Added the required text to a.txt\n'
 
@@ -56,7 +56,7 @@ find . -name 'a.txt' -exec cat {} \;
 #print update on shell
 
 tree hello 2>/dev/null
-echo "\n ####################################### \n"
+echo '\n ####################################### \n'
 sleep 2
 
 #5. Delete the directory named five
@@ -67,7 +67,7 @@ echo '\nTask 5 : Deleted the directory named five\n'
 #print update on shell
 
 tree hello 2>/dev/null
-echo "\n ####################################### \n"
+echo '\n ####################################### \n'
 sleep 2
 
 #6. Rename the one directory to uno
@@ -80,7 +80,7 @@ echo '\nTask 6 : Renamed the one directory to uno\n'
 
 
 tree hello 2>/dev/null
-echo "\n ####################################### \n"
+echo '\n ####################################### \n'
 sleep 2
 
 #7. Move a.txt to the two directory
@@ -92,6 +92,6 @@ echo '\nTask 7 : Moved a.txt to the two directory\n'
 
 
 tree hello 2>/dev/null
-echo "\n ####################################### \n"
+echo '\n ####################################### \n'
 sleep 2
 
