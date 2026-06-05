@@ -86,7 +86,9 @@ sudo python3 -m http.server 90
 echo "#######################################"   
 echo 'Task 14 : All active connections'
 echo "#######################################"   
-lsof -i -P -n
+lsof -i -P -n | grep -Ei 'ESTABLISHED|LISTEN'
+
+
 
 echo "#######################################"   
 echo 'Task 15 : PID on port 5432'
