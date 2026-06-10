@@ -97,9 +97,9 @@ sleep 2
 # Task 7 - Move a.txt into two
 # ==================================================
 
-find . -name 'a.txt' -exec sh -c '
-mv "$1" "$(find . -type d -name "two")"
-' _ {} \; 2>/dev/null
+
+mv hello/uno/a.txt hello/uno/two/a.txt
+
 
 printf "\nTask 7 : Moved a.txt to the two directory\n\n"
 
